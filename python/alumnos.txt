@@ -1,0 +1,4 @@
+101, Ana Silva, correodepruebas@gmail.com, Curso, 10, 10, 10
+202, Carlos Perez, Correodepruebas2@gmail.com, Diplomado, 14, 14, 13
+303, Maria Gómez, correodepruebas2@gmail.com, Bootcamp, 20, 20, 13
+404, Luis Rojas, probandocorreos@gmail.com, Bootcamp, 14, 15, 14
