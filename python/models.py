@@ -31,7 +31,7 @@ class Curso(ProgramaAcademico):
 
     # Evalua si el alumno aprueba el curso (promedio mayor o igual a 10)
     def evaluar_aprobacion(self, notas):
-        return bool(notas) and self.calcular_promedio(notas) >= 10.0
+        return len(notas) == 3 and self.calcular_promedio(notas) >= 10.0
 
 
 # Clase hija que representa un Diplomado (aprueba con promedio >= 14)
@@ -42,7 +42,7 @@ class Diplomado(ProgramaAcademico):
 
     # Evalua si el alumno aprueba el diplomado (promedio mayor o igual a 14)
     def evaluar_aprobacion(self, notas):
-        return bool(notas) and self.calcular_promedio(notas) >= 14.0
+        return len(notas) == 3 and self.calcular_promedio(notas) >= 14.0
 
 
 # Clase hija que representa un Bootcamp (exige notas y ninguna menor a 14)
@@ -53,7 +53,7 @@ class Bootcamp(ProgramaAcademico):
 
     # Evalua si el alumno aprueba el bootcamp (todas las notas registradas >= 14)
     def evaluar_aprobacion(self, notas):
-        return bool(notas) and all(n >= 14.0 for n in notas)
+        return len(notas) == 3 and all(n >= 14.0 for n in notas)
 
 
 # Diccionario que relaciona la opcion elegida con la tupla (Nombre, Clase)
